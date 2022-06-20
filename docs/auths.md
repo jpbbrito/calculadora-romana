@@ -1,11 +1,10 @@
 <div id='1.1'> 
 
-# 1 Autenticação e Recuperação de Senha
+# 1 Autenticação
 [Voltar para Pagina Principal](../../README.md)
-## 1.1 Autenticação
 
 
-**Endpoint:** `http://{{baseUrl}}/api/v1/authenticate`
+**Endpoint:** `http://{{baseUrl}}/api/auth`
 
 **Description:** Autenticação para acesso aos recursos da API
 
@@ -59,18 +58,6 @@
 ``` 
 {
     "error": "userName or password is wrong"
-}
-```
-</details>
-
-<details>
-<summary>401 - Unathorized</summary>
-
-**Status:** Forbidden - **Code:** 401
-
-``` 
-{
-    "error": "API_KEY invalid."
 }
 ```
 </details>

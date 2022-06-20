@@ -1,4 +1,6 @@
-require('dotenv').config();
+require('dotenv').config({
+    path: process.env.NODE_ENV === 'development' ? '.dev.env' : '.env'
+});
 const knex = require('knex');
 
 const app = require('./src/server');
